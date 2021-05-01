@@ -1,0 +1,110 @@
+/*  google font*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+:root {
+  /* dark shades of primary color*/
+  --clr-main-bg: hsl(233, 47%, 7%);
+  --clr-card-bg: hsl(244, 38%, 16%);
+  --clr-accent: hsl(277, 64%, 61%);
+  --clr-heading: hsl(0, 0%, 100%);
+  --clr-main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --clr-stat-heading: hsla(0, 0%, 100%, 0.6);
+  --ff-primary: 'Inter', sans-serif;
+  --ff-secondary: 'Lexend Deca', sans-serif;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+   background-color: var(--clr-main-bg); 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/*  
+===============
+project style
+===============
+*/
+h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+}
+span {
+    color: var(--clr-accent);
+}
+p { 
+    margin: 20px 0 50px 0;
+    font-family: var(--ff-primary);
+    color: var(--clr-main-paragraph);
+    line-height: 1.5;
+}
+h2{
+    font-family: var(--ff-secondary);
+    color: var(--clr-heading); 
+  margin-bottom: 5px;
+}
+h5{
+    font-family: var(--ff-secondary);
+    color: var(--clr-stat-heading); 
+    text-transform: uppercase;
+}
+.container {
+  background-color: var(--clr-card-bg);
+  margin-top: 50px;
+  height: 100px;
+  width: 85vw;
+  border-radius: 0 0 10px 10px;
+}
+.image-container{
+  height: 300px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.image {
+  background-image: url(https://i.ibb.co/8x7syjr/image-header-mobile.jpg);
+  background-size:cover;
+  height: 100%;
+  width: 85vw;
+  position: absolute;
+  border-radius: 10px 10px 0 0;
+  object-fit: contain;
+  
+}
+.overlay {
+  background: hsl(277, 64%, 61%,0.7);
+  height: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.card {
+  padding: 0 20px;
+  text-align: center;
+}
+.counter {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+  
+}
+.count {
+  margin-bottom: 25px;
+}
